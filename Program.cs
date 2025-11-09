@@ -37,7 +37,7 @@ try {
         Console.Write("Tipos: ");
         foreach (var type in pokemon.Types)
         {
-            Console.Write("{0} - {1}", type.Slot, type.Type.Name);
+            Console.Write("{0} - {1} ", type.Slot, type.Type.Name);
         }
         
         Console.WriteLine("\nPeso: {0}", pokemon.Weight);
