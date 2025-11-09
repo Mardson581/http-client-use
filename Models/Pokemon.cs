@@ -8,5 +8,5 @@ public class Pokemon
     public int Weight { get; set; }
     public int Height { get; set; }
     public int Order { get; set; }
-    public List<Type> Types { get; private set; } = new List<Type>();
+    public List<PokemonType> Types { get; private set; } = new List<PokemonType>();
 }

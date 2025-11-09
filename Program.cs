@@ -33,14 +33,14 @@ try {
     {
         pokemon = await response.Content.ReadAsAsync<Pokemon>();
         Console.WriteLine("Nome: {0}", pokemon.Name);
-        
-        Console.WriteLine("Tipos: ");
+
+        Console.Write("Tipos: ");
         foreach (var type in pokemon.Types)
         {
-            Console.Write("{0} ", type.Name);
+            Console.Write("{0} - {1}", type.Slot, type.Type.Name);
         }
         
-        Console.WriteLine("Peso: {0}", pokemon.Weight);
+        Console.WriteLine("\nPeso: {0}", pokemon.Weight);
         Console.WriteLine("Altura: {0}", pokemon.Height);
         Console.WriteLine("Ordem: {0}", pokemon.Order);
     }
