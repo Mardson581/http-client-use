@@ -23,4 +23,4 @@ Retira todos os cabeçalhos de Accept gerados automaticamente pelo .NET
 Adiciona um cabeçalho de Accept personalizado ao HttpClient (todas as requisições terão este cabeçalho)
 
 #### HttpResponseMessage.Content.ReadAsAsync<T>()
-Converte o conteúdo da resposta HTTP em um objeto da classe especificada em T
+Converte o conteúdo da resposta HTTP em um objeto da classe especificada em Type
