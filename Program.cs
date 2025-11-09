@@ -32,12 +32,17 @@ try {
     if (response.IsSuccessStatusCode)
     {
         pokemon = await response.Content.ReadAsAsync<Pokemon>();
-        Console.WriteLine("");
         Console.WriteLine("Nome: {0}", pokemon.Name);
+        
+        Console.WriteLine("Tipos: ");
+        foreach (var type in pokemon.Types)
+        {
+            Console.Write("{0} ", type.Name);
+        }
+        
         Console.WriteLine("Peso: {0}", pokemon.Weight);
         Console.WriteLine("Altura: {0}", pokemon.Height);
         Console.WriteLine("Ordem: {0}", pokemon.Order);
-        Console.WriteLine("");
     }
     else if (response.StatusCode == HttpStatusCode.NotFound)
     {
