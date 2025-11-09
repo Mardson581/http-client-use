@@ -22,5 +22,5 @@ Retira todos os cabeçalhos de Accept gerados automaticamente pelo .NET
 #### HttpClient.DefaultRequestHeaders.Accept.Add(MediaTypeWithQualityHeaderValue)
 Adiciona um cabeçalho de Accept personalizado ao HttpClient (todas as requisições terão este cabeçalho)
 
-#### HttpResponseMessage.Content.ReadAsAsync<T>()
+#### HttpResponseMessage.Content.ReadAsAsync&lt;T&gt;()
 Converte o conteúdo da resposta HTTP em um objeto da classe especificada em T
